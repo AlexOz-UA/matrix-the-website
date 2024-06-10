@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/morpheus-pills.png">
+    <title>Matrix</title>
+</head>
+<body>
+    <div class="start-page__main">
+        <div class="main__photo-container">
+            <img src="img/morpheus-pills.png" alt="morpheus" class="main__photo">
+            <a class="blue-pill" href="https://www.google.com"></a>
+            <a class="red-pill" onclick="lastPhrase('.phrase__container', dissolveMorpheus)"></a>
+            <div class="phrase__container"><p class="morpheus__phrase"></p></div>
+        </div>
+    </div>
+    <div class="loader__bg">
+        <div></div>
+    </div>
+    <div class="container__content">
+        <nav class="navbar">
+            <div class="navbar__title">
+                <h1>Matrix</h1>
+            </div>
+            <div class="burger__btn" onclick="burgerOpenClose()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="opening">
+                <p>Have you ever had a dream, Neo, that you were so sure was real? What if you were unable to wake from that dream? How would you know the difference between the dream world and the real world?</p>
+            </div>
+        <div class="img__with-source img__poster">            
+            <img src="../img/poster-matrix.webp" alt="poster">
+            <a href="https://media.themoviedb.org/t/p/w220_and_h330_face/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg" class="source">source</a>
+        </div>
+        <div class="opening">
+            <p><i>The Matrix</i> is a 1999 science fiction action film written and directed by the <b>Wachowskis</b>. It is the first installment in <i>The Matrix</i> film series, starring <b>Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving</b> and <b>Joe Pantoliano</b>, and depicts a <u>dystopian</u> future in which humanity is unknowingly <b>trapped</b> inside <i>The Matrix</i>, a simulated reality that intelligent machines have created to distract humans while using their bodies as an energy source.</p>
+        </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <canvas id="Matrix"></canvas>
+    <div class="burger__menu">
+        <a class="burger__element" id="/html/history.html" onclick="movingPages(this)">History</a>
+        <a class="burger__element" id="/html/all-parts.html" onclick="movingPages(this)">All Parts</a>
+        <a class="burger__element" id="/html/interesting-facts.html" onclick="movingPages(this)">Interesting Facts</a>
+    </div>
+    <script src="./scripts/matrix-code.js"></script>
+    <script src="./scripts/morpheus.js"></script>
+    <script src="./scripts/burger-menu.js"></script>
+    <script src="./scripts/moving-pages-index.js"></script>
+</body>
+</html>

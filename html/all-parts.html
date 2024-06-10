@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="../img/morpheus-pills.png">
+    <title>Matrix History</title>
+</head>
+<body>
+    <div class="loader__bg-other-page">
+        <div></div>
+    </div>
+    <div class="container__content">
+        <nav class="navbar">
+            <div class="navbar__title">
+                <h1>All parts</h1>
+                <a href="https://m.imdb.com/find/?q=matrix&ref_=nv_sr_sm" class="source">picture sources</a>
+            </div>
+            <div>
+                <a id="./html/index-copy.html" onclick="backToMainPage(this)" class="homelink">Homepage</a>
+            </div>
+        </nav>  
+        <div class="slider">
+            <div class="slides">
+                <img src="../img/matrix-poster-1.webp" alt="" class="slide active" onclick="openFoto(this)">
+                <img src="../img/matrix-poster-2.jpg" alt="" class="slide inactive__left" onclick="openFoto(this)">
+                <img src="../img/matrix-poster-3.jpg" alt="" class="slide inactive__right" onclick="openFoto(this)">
+                <img src="../img/matrix-poster-4.jpg" alt="" class="slide inactive__right" onclick="openFoto(this)">
+            </div>  
+            <div class="controls">
+                <button class="arrow__left" onclick="moveToPrevSlide()"> <img src="../img/arrow-left.svg" alt="" width="60" height="40"> </button>
+                <button class="arrow__right" onclick="moveToNextSlide()"> <img src="../img/arrow-right.svg" alt="" width="60" height="40"> </button>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <div class="wholefoto__container">
+            <div class="close__wholefoto"><button onclick="fotoRemove()" class="button__close"> <img src="../img/cross.svg" alt="" width="30" height="20"> </button></div>
+            <img src="etwas.jpg" alt="wholefoto" class="wholefoto">
+        </div>
+    </div>
+    <canvas id="Matrix"></canvas>
+    <script src="../scripts/moving-pages.js"></script>
+    <script src="../scripts/matrix-code.js"></script>
+    <script src="../scripts/slider.js"></script>
+</body>
+</html>
