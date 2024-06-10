@@ -16,9 +16,12 @@
             <div class="navbar__title">
                 <h1>All parts</h1>
                 <a href="https://m.imdb.com/find/?q=matrix&ref_=nv_sr_sm" class="source">picture sources</a>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmatrix-the-website.vercel.app%2Fhtml%2Fall-parts.html" class="source">validation</a>
             </div>
-            <div>
-                <a id="./html/index-copy.html" onclick="backToMainPage(this)" class="homelink">Homepage</a>
+            <div class="burger__btn" onclick="burgerOpenClose()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </nav>  
         <div class="slider">
@@ -40,8 +43,15 @@
         </div>
     </div>
     <canvas id="Matrix"></canvas>
+    <div class="burger__menu">
+        <a class="burger__element" id="./html/index-copy.html" onclick="movingPages(this)">Homepage</a>
+        <a class="burger__element" id="/html/history.html" onclick="movingPages(this)">History</a>
+        <a class="burger__element" id="/html/all-parts.html" onclick="movingPages(this)">All Parts</a>
+        <a class="burger__element" id="/html/interesting-facts.html" onclick="movingPages(this)">Interesting Facts</a>
+    </div>
     <script src="../scripts/moving-pages.js"></script>
     <script src="../scripts/matrix-code.js"></script>
     <script src="../scripts/slider.js"></script>
+    <script src="../scripts/burger-menu.js"></script>
 </body>
 </html>

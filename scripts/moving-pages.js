@@ -6,7 +6,7 @@ setTimeout(() => {
     document.body.style.overflow = "auto"
 }, 1500);
 
-let backToMainPage = (e) => {
+let movingPages = (e) => {
     otherPageLoader.classList.add('change__screen__show');
     document.body.style.overflow = "hidden"
     setTimeout(() => {
