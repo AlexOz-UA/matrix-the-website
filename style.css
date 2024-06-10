@@ -219,6 +219,10 @@ a:hover::after{
     transition: transform 0.2s ease-in-out;
 }
 
+.blue-pill::after, .red-pill::after{
+    display: none;
+}
+
 .blue-pill:hover, .red-pill:hover{
     transform: scale(1.2);
 }

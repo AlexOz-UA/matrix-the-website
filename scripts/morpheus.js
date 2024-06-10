@@ -5,13 +5,10 @@ let topPage = document.querySelector(".start-page__main");
 let loaderBg = document.querySelector('.loader__bg');
 
 // Funktion, um vorhandenen Text zu löschen und neuen Text mit bestimmten Intervallen und Verzögerungen zu schreiben
-deleteAndWriteText('.phrase__container', [
-    'Hallo, ich frage mich, was dich hierher gebracht hat, Fremder...', 
-    'Jedenfalls, wenn du schon hier bist... Du nimmst die blaue Pille, die Geschichte endet. Du wachst in deinem Bett auf und glaubst, was immer du glauben willst. Du nimmst die rote Pille, du bleibst im Wunderland. Und ich zeige dir, wie tief das Kaninchenloch geht.'
-], 75, 25, 1000);
+deleteAndWriteText('.phrase__container', [ 'Hello, I wonder what took you here, stranger...', 'Anyways, if you are already here...You take the blue pill, the story ends. You wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland. And I show you how deep the rabbit hole goes.'], 75, 25, 1000);
 
 // Hauptfunktion zum Löschen und Schreiben von Text
-let deleteAndWriteText = (elementId, phrases, intervalWrite, intervalDelete, delay) => {
+function deleteAndWriteText(elementId, phrases, intervalWrite, intervalDelete, delay) {
     // Holen Sie das Element, in das der Text geschrieben wird
     let element = document.querySelector(elementId);
     let currentPhraseIndex = 0;
