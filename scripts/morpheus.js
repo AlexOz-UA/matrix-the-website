@@ -93,7 +93,7 @@ let deleteText = (callback) => {
                 clearInterval(intervalId);
                 setTimeout(() => {
                     // Schreiben Sie die letzte Phrase nach dem Löschen
-                    writeText("Erinnere dich... alles, was ich anbiete, ist die Wahrheit. Nicht mehr.", callback);
+                    writeText("Remember... all I'm offering is the truth. Nothing more.", callback);
                 }, 500);
             }
         }, 10);
